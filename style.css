@@ -3,12 +3,15 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     font-family: 'Raleway', sans-serif;
+    - Mobile: 375px - Desktop: 1440px
   </style> */
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+/* COLORS */
 :root {
   --white: #fff;
   --pale-blue: hsl(243, 100%, 93%);
@@ -24,6 +27,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+/* Desktop Device Media Query- Background pic changes. */
 
 @media (min-width: 1440px) {
   body {
@@ -115,6 +120,7 @@ body {
   margin-left: 29em;
 }
 
+/* z-index does not work in this case that's why I made the opacity .99 */
 .third-container {
   background-color: var(--white);
   border-radius: 5px;
@@ -155,6 +161,8 @@ span {
   opacity: .99;
   color: var(--grayish-blue);
 }
+
+/* Mobile Device Media Query- Background pic changes. */
 
 @media (max-width: 450px) {
   body {
